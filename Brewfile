@@ -2,6 +2,10 @@ tap "derailed/k9s"
 tap "hashicorp/tap"
 # Simple, modern, secure file encryption
 brew "age"
+# Securely store and access AWS credentials in development environments
+brew "aws-vault"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Modern, maintained replacement for ls
@@ -24,6 +28,8 @@ brew "nvm"
 brew "phrase-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Command-line interface for Vercel
+brew "vercel-cli"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
