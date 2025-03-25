@@ -171,6 +171,10 @@ alias gm="git merge"
 
 # vim
 alias vi="vim"
+alias vf='vim $(fzf)'
+
+# fzf
+alias f="fzf"
 
 # eza
 alias l="eza"
