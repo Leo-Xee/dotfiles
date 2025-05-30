@@ -66,8 +66,8 @@ cask "karabiner-elements"
 cask "keycastr"
 # Multi-platform web browser
 cask "microsoft-edge"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
+# App to write, plan, collaborate, and get organised
+cask "notion"
 # Collaboration platform for API development
 cask "postman"
 # Control your tools with a few keystrokes
@@ -76,5 +76,7 @@ cask "raycast"
 cask "slack"
 # Move and resize windows with ease
 cask "spectacle"
+# To-do & task list manager
+cask "ticktick"
 # Open-source code editor
 cask "visual-studio-code"

@@ -1,4 +1,4 @@
-# dotfiles 
+# dotfiles
 
 Linux와 MacOS 전용 dotfiles를 [chezmoi](https://www.chezmoi.io/)로 관리합니다.
 
@@ -11,7 +11,7 @@ $ brew install chezmoi
 ## 실행
 
 ```sh
-# 로컬 자정소로 가져오기
+# 로컬 저장소로 가져오기
 $ chezmoi init git@github.com:Leo-Xee/dotfiles.git
 
 # 변경 확인
@@ -29,7 +29,7 @@ $ chezmoi init --apply Leo-Xee
 ### Common
 
 ```sh
-$ chezmoi edit <target>
+$ chezmoi edit <target>  # ~/.gitconfig
 ```
 
 ### Homebrew
@@ -55,4 +55,3 @@ $ brew bundle dump --describe --force --no-vscode --file $HOME/.local/share/chez
 - [ ] macOS 세팅 관리 추가
 - [ ] vscode, cursor 세팅 관리 추가
 - [ ] .ssh 관리 추가(age)
-
