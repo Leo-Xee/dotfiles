@@ -14,6 +14,8 @@ brew "eza"
 brew "fzf"
 # GNU compiler collection
 brew "gcc"
+# Kubernetes package manager
+brew "helm"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
@@ -47,7 +49,7 @@ cask "cursor"
 # Databases and SQL IDE
 cask "datagrip"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Collaborative team software
 cask "figma"
 cask "font-fira-code"
@@ -56,6 +58,8 @@ cask "font-fira-code-nerd-font"
 cask "framer"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Tool to optimise images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -64,19 +68,29 @@ cask "iterm2"
 cask "karabiner-elements"
 # Open-source keystroke visualiser
 cask "keycastr"
+# Software for Logitech devices
+cask "logi-options+"
 # Multi-platform web browser
 cask "microsoft-edge"
+# Online collaborative whiteboard platform
+cask "miro"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Collaboration platform for API development
 cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Modified browser that helps in responsive web development
+cask "responsively"
 # Team communication and collaboration software
 cask "slack"
 # Move and resize windows with ease
 cask "spectacle"
+# Web browser
+cask "thebrowsercompany-dia"
 # To-do & task list manager
 cask "ticktick"
 # Open-source code editor
 cask "visual-studio-code"
+# Network protocol analyzer
+cask "wireshark-app"

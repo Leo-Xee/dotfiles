@@ -146,11 +146,11 @@ alias gca="git commit --amend"
 alias gf="git fetch"
 ## push
 alias gp="git push"
-alias gpc="git push origin $(git_current_branch)"
-alias gpcf="git push origin $(git_current_branch) --force-with-lease"
+# alias gpc="git push origin $(git_current_branch)"
+# alias gpcf="git push origin $(git_current_branch) --force-with-lease"
 ## pull
 alias gpl="git pull"
-alias gplc="git pull origin $(git_current_branch)"
+# alias gplc="git pull origin $(git_current_branch)"
 ## cherry pick
 alias gcp="git cherry-pick"
 alias gcpa="git cherry-pick --abort"
@@ -205,12 +205,4 @@ eval "$(zoxide init zsh)"
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-#############
-# work - ct #
-#############
-
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export VAULT_ADDR=https://vault.aidt.classting.dev
-
 
