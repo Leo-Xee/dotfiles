@@ -29,7 +29,11 @@ $ chezmoi init --apply Leo-Xee
 ### Common
 
 ```sh
+# 로컬 저장소 내 파일 수정
 $ chezmoi edit <target>  # ~/.gitconfig
+
+# 로컬 저장소에 반영
+$ chezmoi add <target>
 ```
 
 ### Homebrew
