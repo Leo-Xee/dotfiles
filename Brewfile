@@ -26,8 +26,14 @@ brew "krew"
 brew "kubectx"
 # Manage multiple Node.js versions
 brew "nvm"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
 # Tool to interact with the Phrase API
 brew "phrase-cli"
+# Python version management
+brew "pyenv"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line interface for Vercel
@@ -42,16 +48,20 @@ brew "hashicorp/tap/vault"
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
+# AI Coding Agent IDE
+cask "antigravity"
 # Chromium based browser
 cask "arc"
-# Write, edit, and chat about your code with AI
-cask "cursor"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Databases and SQL IDE
 cask "datagrip"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 # Collaborative team software
 cask "figma"
+# Web browser
+cask "firefox"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 # Tool that helps teams design every part of the product experience
@@ -76,12 +86,12 @@ cask "microsoft-edge"
 cask "miro"
 # App to write, plan, collaborate, and get organised
 cask "notion"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Collaboration platform for API development
 cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
-# Modified browser that helps in responsive web development
-cask "responsively"
 # Team communication and collaboration software
 cask "slack"
 # Move and resize windows with ease
@@ -92,5 +102,7 @@ cask "thebrowsercompany-dia"
 cask "ticktick"
 # Open-source code editor
 cask "visual-studio-code"
-# Network protocol analyzer
-cask "wireshark-app"
+# Multimedia player
+cask "vlc"
+# Video communication and virtual meeting platform
+cask "zoom"

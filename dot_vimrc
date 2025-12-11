@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'dracula/vim', { 'as': 'dracula' }
+Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -30,11 +30,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set number
+" set number
 set termguicolors
 syntax enable
 
-let g:dracula_colorterm = 0
-let g:airline_theme='dracula'
-
-colorscheme dracula
+let g:lightline = {'colorscheme': 'catppuccin_frappe'}
+let g:airline_theme = 'catppuccin_frappe'
