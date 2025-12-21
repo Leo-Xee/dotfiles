@@ -24,8 +24,6 @@ brew "kubernetes-cli"
 brew "krew"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
-# Manage multiple Node.js versions
-brew "nvm"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
 # Tool to interact with the Phrase API
@@ -34,10 +32,14 @@ brew "phrase-cli"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line interface for Vercel
 brew "vercel-cli"
+# Watch files and take action when they change
+brew "watchman"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -48,10 +50,12 @@ brew "hashicorp/tap/vault"
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
-# AI Coding Agent IDE
-cask "antigravity"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Chromium based browser
 cask "arc"
+# 3D creation suite
+cask "blender"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # Databases and SQL IDE
@@ -64,8 +68,6 @@ cask "figma"
 cask "firefox"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
-# Tool that helps teams design every part of the product experience
-cask "framer"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
