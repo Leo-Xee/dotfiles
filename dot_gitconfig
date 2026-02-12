@@ -4,3 +4,5 @@
 [branch]
 	autosetupmerge = always
 [log]
+[core]
+	editor = nvim

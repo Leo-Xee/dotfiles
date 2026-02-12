@@ -1,0 +1,18 @@
+theme = "Catppuccin Mocha"
+
+background-opacity = 0.80
+background-blur-radius = 15
+
+window-padding-x = 10
+window-padding-y = 10
+
+font-family = "FiraCode Nerd Font Mono"
+font-family = "D2CodingLigature Nerd Font Mono"
+font-thicken =  true
+font-thicken-strength = 200 
+
+cursor-style = block
+
+
+keybind = shift+super+k=scroll_page_lines:-3
+keybind = shift+super+j=scroll_page_lines:3

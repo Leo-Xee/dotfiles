@@ -1,110 +1,91 @@
 tap "derailed/k9s"
 tap "hashicorp/tap"
-# Simple, modern, secure file encryption
+tap "nikitabobko/tap"
 brew "age"
-# Securely store and access AWS credentials in development environments
 brew "aws-vault"
-# Official Amazon AWS command-line interface
 brew "awscli"
-# Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
-# Modern, maintained replacement for ls
 brew "eza"
-# Command-line fuzzy finder written in Go
-brew "fzf"
-# GNU compiler collection
 brew "gcc"
-# Kubernetes package manager
 brew "helm"
-# Lightweight and flexible command-line JSON processor
 brew "jq"
-# Kubernetes command-line interface
 brew "kubernetes-cli"
-# Package manager for kubectl plugins
 brew "krew"
-# Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
-# Create, run, and share large language models (LLMs)
+brew "neovim"
 brew "ollama"
-# Tool to interact with the Phrase API
 brew "phrase-cli"
-# Python version management
 brew "pyenv"
-# Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
-# Cross-shell prompt for astronauts
 brew "starship"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Command-line interface for Vercel
 brew "vercel-cli"
-# Watch files and take action when they change
 brew "watchman"
-# Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
-# Vault
 brew "hashicorp/tap/vault"
-# Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Command-line interface for 1Password
 cask "1password-cli"
-# Enable Windows-like alt-tab
-cask "alt-tab"
-# Chromium based browser
-cask "arc"
-# 3D creation suite
+cask "nikitabobko/tap/aerospace"
 cask "blender"
-# Terminal-based AI coding assistant
 cask "claude-code"
-# Databases and SQL IDE
 cask "datagrip"
-# App to build and share containerised applications and microservices
 cask "docker-desktop"
-# Collaborative team software
 cask "figma"
-# Web browser
 cask "firefox"
+cask "font-d2coding-nerd-font"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
-# Web browser
+cask "ghostty"
 cask "google-chrome"
-# Client for the Google Drive storage service
 cask "google-drive"
-# Tool to optimise images to a smaller size
+cask "homerow"
 cask "imageoptim"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
-# Keyboard customiser
 cask "karabiner-elements"
-# Open-source keystroke visualiser
 cask "keycastr"
-# Software for Logitech devices
 cask "logi-options+"
-# Multi-platform web browser
 cask "microsoft-edge"
-# Online collaborative whiteboard platform
 cask "miro"
-# App to write, plan, collaborate, and get organised
 cask "notion"
-# Open-source software for live streaming and screen recording
 cask "obs"
-# Collaboration platform for API development
 cask "postman"
-# Control your tools with a few keystrokes
 cask "raycast"
-# Team communication and collaboration software
 cask "slack"
-# Move and resize windows with ease
-cask "spectacle"
-# Web browser
 cask "thebrowsercompany-dia"
-# To-do & task list manager
 cask "ticktick"
-# Open-source code editor
 cask "visual-studio-code"
-# Multimedia player
-cask "vlc"
-# Video communication and virtual meeting platform
 cask "zoom"
+vscode "aaron-bond.better-comments"
+vscode "alefragnani.project-manager"
+vscode "anthropic.claude-code"
+vscode "arcanis.vscode-zipfs"
+vscode "bradlc.vscode-tailwindcss"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "christian-kohler.npm-intellisense"
+vscode "dbaeumer.vscode-eslint"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "eamodio.gitlens"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.auto-rename-tag"
+vscode "lokalise.i18n-ally"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-ceintl.vscode-language-pack-ko"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "naumovs.color-highlight"
+vscode "oderwat.indent-rainbow"
+vscode "redhat.vscode-yaml"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "simonsiefke.svg-preview"
+vscode "steoates.autoimport"
+vscode "unifiedjs.vscode-mdx"
+vscode "usernamehw.errorlens"
+vscode "vscodevim.vim"
+vscode "xabikos.javascriptsnippets"
+vscode "yoavbls.pretty-ts-errors"
+vscode "yzhang.markdown-all-in-one"
