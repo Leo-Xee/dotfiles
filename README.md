@@ -1,61 +1,69 @@
 # dotfiles
 
-Linux와 MacOS 전용 dotfiles를 [chezmoi](https://www.chezmoi.io/)로 관리합니다.
+macOS 전용 dotfiles를 [chezmoi](https://www.chezmoi.io/)로 관리합니다.
 
 ## 설치
 
 ```sh
-$ brew install chezmoi
+brew install chezmoi
 ```
 
-## 실행
+## 가져오기
+
+### 초기 설정
 
 ```sh
-# 로컬 저장소로 가져오기
-$ chezmoi init git@github.com:Leo-Xee/dotfiles.git
-
-# 변경 확인
-$ chezmoi diff
-
-# 반영
-$ chezmoi apply -v
-
-# 위 절차를 한번에 실행
-$ chezmoi init --apply Leo-Xee
+chezmoi init --apply Leo-Xee
 ```
 
-## 업데이트
-
-### Common
+### 기존 설정 업데이트
 
 ```sh
-# 로컬 저장소 내 파일 수정
-$ chezmoi edit <target>  # ~/.gitconfig
-
-# 로컬 저장소에 반영
-$ chezmoi add <target>
+# 원격 저장소의 변경사항 가져오기
+chezmoi update
 ```
 
-### Homebrew
+## 반영하기
+
+### 추적 대상
+
+chezmoi가 추적하는 파일은 아래 명령어로 반영합니다.
 
 ```sh
-$ brew bundle dump --describe --force --no-vscode --file $HOME/.local/share/chezmoi/Brewfile
+# 로컬 변경사항을 chezmoi 저장소에 반영
+chezmoi add <target>
+
+# 예시
+chezmoi add ~/.gitconfig
+chezmoi add ~/.zshrc
 ```
 
-### Iterm
+### 수동 추출 대상
 
-- Iterm의 settings > load settings 기능 사용
-  - `$HOME/.local/share/chezmoi/iterm2`
+별도 추출이 필요한 항목입니다.
 
-### Raycast
+**Homebrew**
 
-- Raycast의 import/export 기능 사용
-  - `$HOME/Raycast.rayconfig`
+```sh
+brew bundle dump --describe --force --no-vscode --file $HOME/.local/share/chezmoi/Brewfile
+```
 
-## TODO
+**Raycast**
 
-- [ ] Bootstrap 구성
-- [ ] 동기화 플로우 개선(심볼릭 링크)
-- [ ] macOS 세팅 관리 추가
-- [ ] vscode, cursor 세팅 관리 추가
-- [ ] .ssh 관리 추가(age)
+- Raycast의 import/export 기능으로 `Raycast.rayconfig` 파일을 추출하여 저장소에 복사
+
+## 관리 목록
+
+| 도구                                                          | 설정 파일               |
+| ------------------------------------------------------------- | ----------------------- |
+| [Zsh](https://www.zsh.org/)                                   | `.zshrc`, `.zprofile`   |
+| [Oh My Zsh](https://ohmyz.sh/)                                | `.oh-my-zsh/`           |
+| [Starship](https://starship.rs/)                              | `.config/starship.toml` |
+| [Git](https://git-scm.com/)                                   | `.gitconfig`            |
+| [Neovim](https://neovim.io/)                                  | `.config/nvim/`         |
+| [Ghostty](https://ghostty.org/)                               | `.config/ghostty/`      |
+| [AeroSpace](https://github.com/nikitabobko/AeroSpace)         | `.aerospace.toml`       |
+| [Karabiner-Elements](https://karabiner-elements.pqrs.org/)    | `.config/karabiner/`    |
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | `.claude/`              |
+| [Homebrew](https://brew.sh/)                                  | `Brewfile`              |
+| [Raycast](https://www.raycast.com/)                           | `Raycast.rayconfig`     |
