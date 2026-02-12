@@ -23,7 +23,16 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Leo-Xee
 ## 기존 설정 업데이트
 
 ```sh
-# 원격 저장소의 변경사항 가져오기
+# 1. 원격 저장소의 변경사항을 로컬 chezmoi 저장소로 가져오기
+chezmoi git pull
+
+# 2. 로컬 chezmoi 저장소와 홈 디렉토리 간의 차이 미리보기
+chezmoi diff
+
+# 3. 로컬 chezmoi 저장소의 설정을 홈 디렉토리에 적용
+chezmoi apply
+
+# 또는 1~3을 한 번에 실행
 chezmoi update
 ```
 
@@ -34,12 +43,16 @@ chezmoi update
 chezmoi가 추적하는 파일은 아래 명령어로 반영합니다.
 
 ```sh
-# 로컬 변경사항을 chezmoi 저장소에 반영
-chezmoi add <target>
+# 1. 홈 디렉토리의 변경된 파일을 로컬 chezmoi 저장소에 반영
+chezmoi add ~/<target>
 
-# 예시
-chezmoi add ~/.gitconfig
-chezmoi add ~/.zshrc
+# 2. 반영된 내용 확인
+chezmoi diff
+
+# 3. 로컬 chezmoi 저장소의 변경사항을 원격 저장소에 푸시
+chezmoi git add .
+chezmoi git commit -- -m "update dotfiles"
+chezmoi git push
 ```
 
 ### 수동 추출 대상
@@ -49,7 +62,7 @@ chezmoi add ~/.zshrc
 **Homebrew**
 
 ```sh
-brew bundle dump --describe --force --no-vscode --file $HOME/.local/share/chezmoi/Brewfile
+brew bundle dump --force --file $HOME/.local/share/chezmoi/Brewfile
 ```
 
 **Raycast**
