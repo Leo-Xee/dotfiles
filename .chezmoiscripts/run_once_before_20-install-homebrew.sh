@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+if command -v brew &>/dev/null; then
+  echo "Homebrew already installed. Skipping."
+else
+  echo "Installing Homebrew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  echo "Homebrew installed."
+fi

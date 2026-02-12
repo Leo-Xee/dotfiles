@@ -2,21 +2,25 @@
 
 macOS 전용 dotfiles를 [chezmoi](https://www.chezmoi.io/)로 관리합니다.
 
-## 설치
+## 새 기기에서 세팅
 
 ```sh
-brew install chezmoi
+# chezmoi 설치 및 dotfiles 적용 (원라이너)
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Leo-Xee
 ```
 
-## 가져오기
+아래 스크립트가 자동으로 순서대로 실행됩니다.
 
-### 초기 설정
+| 순서 | 스크립트                 | 설명                          |
+| ---- | ------------------------ | ----------------------------- |
+| 순서 | 스크립트                 | 설명                          |
+| 1    | `10-install-xcode-tools` | Xcode Command Line Tools 설치 |
+| 2    | `20-install-homebrew`    | Homebrew 설치                 |
+| 3    | `30-install-packages`    | Brewfile로 패키지 일괄 설치   |
+| 4    | `40-install-oh-my-zsh`   | Oh My Zsh 설치                |
+| 5    | `50-install-nvm`         | NVM 설치                      |
 
-```sh
-chezmoi init --apply Leo-Xee
-```
-
-### 기존 설정 업데이트
+## 기존 설정 업데이트
 
 ```sh
 # 원격 저장소의 변경사항 가져오기
