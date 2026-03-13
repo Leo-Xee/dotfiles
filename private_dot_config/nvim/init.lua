@@ -19,6 +19,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Setting
+vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 2
